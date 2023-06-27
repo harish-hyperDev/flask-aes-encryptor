@@ -1,0 +1,4 @@
+Flask == 2.3.2
+crypto == 1.4.1
+pycrypto == 2.6.1
+pycryptodome == 3.18.0
