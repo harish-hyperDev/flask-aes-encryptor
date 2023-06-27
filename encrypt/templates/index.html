@@ -73,7 +73,7 @@
     <title>Hyper AES</title>
 </head>
 <body style="display: flex !important; justify-content: center !important; margin: 20px 0px;">
-    <form style="display: flex; justify-content: center !important; flex-direction: column !important;" method="POST">
+    <form style="display: flex; justify-content: center !important; flex-direction: column !important;" method="POST" autocomplete="off">
 
 		<div class="form-group">
 		    <label for="exampleInputText1">Email Text to Encrypt</label>
@@ -87,7 +87,7 @@
 		<div class="form-group">
 		    <label for="exampleInputKey1">Enter Key (16 digits)</label>
 		    {%if keyy %}
-			    <input class="form-control" id="exampleInputKey1" name="plain-key" aria-describedby="keyHelp" value='{{keyy}}' placeholder="16 digits key">
+			    <input class="form-control" id="exampleInputKey1" name="plain-key" aria-describedby="keyHelp" value='{{keyy}}' placeholder="16 digits key" minlength="16" required>
 			{% else %}
 			    <input class="form-control" id="exampleInputKey1" name="plain-key" aria-describedby="keyHelp" placeholder="16 digits key">
 		    {% endif %}
